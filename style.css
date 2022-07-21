@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background-color:rgba(128, 128, 128, 0); */
+    background-color: rgb(71, 71, 71);
+}
+.container-header{
+    width: viewport;
+    height: auto;
+    background-color: black;
+    border: 2px solid rgb(0, 250, 0);
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.logo{
+    border: 2px solid rgb(0, 250, 0);
+    padding: 10px;
+    border-radius: 37px;
+}
+
+.container-title-menu{
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid yellow;  */
+}
+
+.title{
+    margin: 5px 0;
+    padding: 5px;
+    color: rgb(0, 250, 0);
+    border: 2px solid rgb(0, 250, 0);
+}
+
+ul{
+    width: inherit;
+    color: rgb(0, 250, 0);
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+li{
+    margin: 1px auto;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(0, 250, 0);
+    border: 1px solid rgb(0, 250, 0);
+    border-radius: 10px;
+}
+
+li a{
+    text-decoration: none;
+    color: rgb(0, 250, 0);
+}
+
+li:hover, .signup:hover, .login:hover{
+    background-color: purple
+}
+
+.container-login-signup-search{
+    width: 10%;
+    /* border: 1px solid blue; */
+}
+.login, .signup{
+    text-align: center;
+    color: rgb(0, 250, 0);
+    margin: 5px 2px;
+    padding: 10px 1%;
+    border: 1px solid rgb(0, 250, 0);
+    border-radius:10px;
+}
+
+.search{
+    text-align: center;
+    width: 99%;
+    padding: 10px 0;
+    border: 1px solid rgb(0, 250, 0);
+    border-radius: 10px;
+    color: rgb(0, 250, 0);
+    font-size: 16px;
+    background-color: black;
+}
+
+@media(max-width:630px){
+    .container-header{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-title-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid yellow;*/
+    }
+
+    .title{
+        /*if it's not with marquee, uncomment this. This will be Only for "Robot Blog".*/
+        /* min-width: 320px; */
+        text-align: center;
+    }
+
+    ul{
+        width: 100%;
+        padding: 15px 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    li{
+        margin: 2px 0;
+        text-align: center;
+    }
+    .container-login-signup-search{
+        width: 100%;
+        /* border: 1px solid blue; */
+    }
+}
+
+/*post-section*/
+.post-container{
+    background-color: black;
+    border: 2px solid rgb(0, 250, 0);
+    color: rgb(0, 250, 0);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.post-title{
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+}
+
+.posted-time{
+    color: lightgreen;
+    /* border: 1px solid green; */
+    display: flex;
+    margin: 10px 0px;
+}
+
+.time{
+    margin: 0 10px;
+}
+.img-p-btn-container{
+    /* border: 4px solid purple; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.img{
+    max-width: 200px;
+    height: auto;
+
+}
+
+img{
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 100%;
+}
+
+.p-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: flex-end;
+}
+
+.p{
+    /* border: 2px solid red; */
+    margin: 10px 10px 10px;
+    color: white;
+}
+
+.btn{
+    border: 2px solid rgb(0, 250, 0);
+    padding: 5px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.btn:hover{
+    background-color: purple;
+}
+@media screen and (max-width:655px){
+    .img-p-btn-container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+/*footer*/
+footer{
+    color: rgb(0, 250, 0);
+    background-color: black;
+    border: 2px solid rgb(0, 250, 0);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.creator{
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.icon-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0px;
+}
+
+.icon{
+    width: 48px;
+    height: 48px;
+}
+
+.power{
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.icon-netlify{
+    width: 20px;
+    height: 20px;
+}
+
+.netlify{
+    color: aqua;
+}
+
+/* back to top button */
+.back-to-top-btn{
+    text-decoration: none;
+    font-size: 13px;
+    background-color: darkgray;
+    color: white;
+    border: 1px solid rgb(0, 250, 0);
+    border-radius: 10px;
+    padding: 10px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    opacity: 0.5;
+}
+
+.back-to-top-btn:hover{
+    opacity: 1;
+    background-color: purple;
+    
+}
