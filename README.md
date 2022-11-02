@@ -4,8 +4,8 @@ I always add fearutes and change code base on what I learned.
 
 # List of change
 ## version 1.0.0
-[x] only HTML and CSS basic responsive website
-[x] screencast of how it look like
+[] only HTML and CSS basic responsive website
+[] screencast of how it look like
 
 # See live website here
 https://robot-blog.netlify.app/
