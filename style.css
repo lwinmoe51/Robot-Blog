@@ -9,6 +9,7 @@ body{
     
 }
 
+/* nav section */
 .navcu{
     background-color: black;
 }
@@ -47,6 +48,13 @@ body{
     border: 1px solid rgb(0, 250, 0);
 }
 
+@media screen and (max-width:992px){
+    .dlgnone{
+        display: none;
+    }
+}
+
+/* for all button class */
 .btn{
     color: rgb(0, 250, 0);
     background-color: black;
@@ -57,8 +65,14 @@ body{
     background-color: purple;
 }
 
-@media screen and (max-width:992px){
-    .dlgnone{
-        display: none;
-    }
+/* post section */
+.card{
+    background-color: black;
+    border:3px solid rgb(0, 250, 0);
+}
+.card-title{
+    color:red;
+}
+.card-text{
+    color: white;
 }
